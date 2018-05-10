@@ -1,0 +1,62 @@
+<div class="fast-booking-form">
+    <form action="{{action('BookingsController@book')}}" method="post">
+        <input type="hidden" name="_token" value="{{csrf_token()}}">
+        <table><!--Beginning of the table section-->
+            <tbody>
+            <tr>
+                <td style="border-left: 1px solid deepskyblue; padding-left: 10px;"><label
+                        for="pickup_location">Pick-up
+                    location</label></td>
+                <td colspan="8">
+                    <input type="text" name="pickup_location" placeholder="Where are you?..."
+                           id="pickup_location" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="border-left: 1px solid deepskyblue; padding-left: 10px;"><label
+                        for="dropoff_location">Destination</label></td>
+                <td colspan="8">
+                    <input type="text" name="dropoff_location" placeholder="Where are you going..."
+                           id="dropoff_location" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="border-left: 1px solid deepskyblue; padding-left: 10px;"><label for="contact_number">Contact
+                    Number</label></td>
+                <td colspan="8">
+                    <input type="text" id="contact_number" name="contact_number" placeholder="Phone number"
+                           required/>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="border-left: 1px solid deepskyblue; padding-left: 10px;"><label
+                        for="email_address">Email</label></td>
+                <td colspan="8">
+                    <input type="email" id="email_address" name="email" placeholder="Enter your email address"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="border-left: 1px solid deepskyblue; padding: 10px"><label for="pickup_date">Pick-up
+                    <br/>date</label>
+                </td>
+                <td><input type="text" name="pickup_date" id="pickup_date"/></td>
+                <!--<td><label for="time">Pick-up <br/>time</label></td>-->
+                <td><input type="text" class="timepicker" name="pickup_time" id="time"/></td>
+
+                <td style="width: 50px;"></td>
+
+                <td style="border-left: 1px solid deepskyblue; padding-left: 10px; padding-right: 10px;"><label
+                        for="drop_off_date">Drop-off<br/> date</label></td>
+                <td><input type="text" name="drop_off_date" id="drop_off_date"/></td>
+                <!--<td style="border-left: 1px solid deepskyblue; padding-left: 10px; padding-right: 10px;"><label for="drop_off_time">Drop-off <br />time</label></td>-->
+                <td style="padding-left: 5px"><input type="text" class="timepicker" name="dropoff_time"
+                                                     id="drop_off_time"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8"><input type="submit" value="Book"></td> <!--Submit button-->
+            </tr>

@@ -1,0 +1,638 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+.top-contacts-list{
+    height: auto;
+    text-align: center;
+    background-color: deepskyblue;
+    color: white;
+}
+
+.top-contacts-list span{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/*Styles the whole container that holds the header of the webiste*/
+.header-wrapper {
+    background-color: #333 /*#2196F3*/;
+    color: white;
+    height: auto;
+    font-size: 20px;
+    border-bottom: solid 1px white;
+    border-top: solid 1px white;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
+.header-wrapper .nav-bar .icon {
+    display: none;
+}
+
+/*Styles every other individual list element*/
+.header-wrapper .nav-bar a{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+    padding-top: 1em;
+    margin-right: 50px;
+    color: white;
+}
+
+/*Styles every other individual list element when it has been hovered over by a mouse*/
+.header-wrapper .nav-bar ul li:hover{
+    border-bottom: 2px solid white;
+    -webkit-transition: border-bottom 1.5s ease-out;
+    -moz-transition: border-bottom 1.5s ease-out;
+    -o-transition: border-bottom 1.5s ease-out;
+    transition: border-bottom 1.5s ease-out;
+}
+
+/*Styles the links inside the list container*/
+.header-wrapper .nav-bar ul li a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*Styles for the homepage background image*/
+.main-body{
+    background: url("../images/hyundai-inside.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+/*This button shows only when the website is accessed on small phones*/
+.button-for-phones{
+    display: none;
+}
+
+/*styles for the container with the form*/
+.fast-booking-form {
+    background-color: whitesmoke;
+    width: 80%;
+    border: none;
+    position: absolute;
+    top: 250px;
+    right: 50px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+}
+
+/*styles the input forms of the booking form*/
+.fast-booking-form #pickup_date, #time, #drop_off_date, #drop_off_time {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    box-shadow: none;
+ }
+
+/*Styles all the listed boxes*/
+.fast-booking-form #pickup_location, .fast-booking-form #dropoff_location, .fast-booking-form #contact_number,
+.fast-booking-form #email_address, .fast-booking-form input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    /*margin-top: 0;*/
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    box-shadow: none;
+}
+
+/*This styles the submit button on the fast booking form*/
+.fast-booking-form input[type="submit"]{
+    background: deepskyblue;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    outline-color: deepskyblue;
+}
+
+/*Gives a pink color to the input field that is in focus*/
+.fast-booking-form input:focus{
+    outline-color:deepskyblue;
+}
+
+/*Styles all the labels in the booking box*/
+.fast-booking-form label {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/*styles all the table cells in the booking form table*/
+.fast-booking-form table td{
+    padding-right: 5px;
+}
+
+.services-section{
+    position: relative;
+    top: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.services-section .container{
+    /*border: solid 2px red;*/
+}
+
+.services-section .caption{
+    font-size: 2em;
+    text-transform: uppercase;
+    color: deepskyblue;
+}
+
+.services-section .services-heading-text{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.services-section .container .fa{
+    color: rgba(0, 191, 255, 0.4);
+}
+
+
+/*Always on the road section heading*/
+.always-on-the-road-section{
+    margin-top: 500px;
+    background-image: url("../images/interior.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+/*Styles for the always on the road text*/
+.always-on-the-road-section .text-wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    padding-top: 100px;
+}
+
+/*Styles for the always on the road text*/
+.always-on-the-road-section .text-wrapper p{
+    font-size: 3em;
+}
+
+
+/*Thes styles style the section on the homepage which displays the available
+vehicles of desh car hire company*/
+.fleet-options
+{
+    height: auto;
+    text-align: center;
+}
+
+.fleet-options .car-container{
+    position: relative;
+    width: 100%;
+}
+
+.fleet-options .car-container .image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.fleet-options .car-container .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.fleet-options .car-container:hover .overlay{
+    /*opacity: 1;*/
+}
+
+.fleet-options .car-container  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+/*Styles for the section which displays the various vehicles*/
+.fleet-options p{
+    text-align: center;
+}
+
+/*THis section has style that controls the login form for the booking section*/
+.booking-section {
+    height: 500px;
+}
+
+/*Styles the section used to log into the booking management panel for a user*/
+.booking-section .bookings-management-login-section{
+    border: 1px solid gray;
+    box-shadow: 0 8px 6px -6px black;
+    width: 440px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    top: 170px;
+    left: 35%;
+
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/*Styles the input fields found on the login section of the booking management
+section*/
+.booking-section .bookings-management-login-section input{
+    margin-top: 15px;
+    padding: 8px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+
+/*Styles the submit button found on the booking management form*/
+.booking-section .bookings-management-login-section input[type='submit']{
+    margin-bottom: 10px;
+}
+
+
+/*These are styles for the contact us section*/
+/*Styles the contact us form section*/
+.contact-us-section .contact-us-form-section{
+   /*!* border: 1px solid gray;*/
+    width: auto;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 30px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+/*Styles for the caption of the contact us form*/
+.contact-us-section .contact-us-form-section p{
+    text-align: center;
+}
+
+/*Styles the email input box and the fullname input box*/
+.contact-us-section .contact-us-form-section input[type = 'text']{
+
+}
+
+/*Styles of the Datepicker element*/
+.ui-datepicker{
+    background-color: #2aabd2;
+}
+
+
+/*Styles for the discover Malawi section*/
+.discover-malawi{
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+
+.discover-malawi h2{
+    color: deepskyblue;
+}
+
+/*This styles the footer of the whole website*/
+footer{
+    margin-top: 5px;
+    background-color: #333;
+    height: auto;
+    color: #fff;
+    padding: 50px;
+    font-weight: normal;
+}
+
+footer .container-fluid ul{
+    list-style-type: none;
+}
+
+footer .container-fluid ul li{
+    display: block;
+    padding: 5px 5px;
+}
+
+footer .container-fluid ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+
+.footer-section .social-links{
+    font-size: 3em;
+    text-align: center;
+}
+
+.footer-section .social-links a{
+    color:  rgba(128, 128, 128, 0.5);
+}
+
+/*Styles for the Social links when a mouse hovers over them*/
+.footer-section .social-links a:hover{
+    color:  #fff;
+    -webkit-transition: color 1.5s ease-out;
+    -moz-transition: color 1.5s ease-out;
+    -o-transition: color 1.5s ease-out;
+    transition: color 1.5s ease-out;
+}
+
+
+.footer-section hr {
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #4d4d4d;
+}
+
+.footer-section .copyright-text {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 20px;
+}
+
+
+/*Styles for the home sliding images*/
+.pic-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+/*    border: solid 4px red;*/
+}
+
+figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /*animation*/
+
+    animation: slideShow 24s linear infinite 0s;
+    -o-animation: slideShow 24s linear infinite 0s;
+    -moz-animation: slideShow 24s linear infinite 0s;
+    -webkit-animation: slideShow 24s linear infinite 0s;
+}
+
+
+.pic-1 {
+    opacity: 1;
+    background: url("../images/1.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.pic-2 {
+    animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+    background: url("../images/discover_malawi.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.pic-3 {
+    animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -webkit-animation-delay: 12s;
+    background: url("../images/opel_image.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.pic-4 {
+    animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -webkit-animation-delay: 18s;
+    background: url("../images/niss_xtrail.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* keyframes*/
+
+@keyframes
+slideShow {  0% {
+    opacity: 0;
+    transform:scale(1);
+    -ms-transform:scale(1);
+}
+    5% {
+        opacity: 1
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+        transform:scale(1.1);
+        -ms-transform:scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        transform:scale(1);
+        -ms-transformm:scale(1);
+    }
+}
+@-o-keyframes
+slideShow {  0% {
+    opacity: 0;
+    -o-transform:scale(1);
+}
+    5% {
+        opacity: 1
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+        -o-transform:scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        -o-transformm:scale(1);
+    }
+}
+@-moz-keyframes
+slideShow {  0% {
+    opacity: 0;
+    -moz-transform:scale(1);
+}
+    5% {
+        opacity: 1
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+        -moz-transform:scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        -moz-transformm:scale(1);
+    }
+}
+@-webkit-keyframes
+slideShow {  0% {
+    opacity: 0;
+    -webkit-transform:scale(1);
+}
+    5% {
+        opacity: 1
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+        -webkit-transform:scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transformm:scale(1);
+    }
+}
+
+/*Styles for the alert box which pops up when a booking has been completed using the booking section*/
+div.alert {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    color: white;
+}
+
+/*Styles for the alert box which pops up when a booking has been completed using the booking section*/
+div.alert .alert-content{
+    /*background-color: #fefefe;*/
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    font-size: x-large;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 80%; /* Could be more or less, depending on screen size*/
+}
+
+/* The Close Button */
+.alert .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.alert .close:hover,
+.alert .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Hides the book now button when the website is viewed on larger screens*/
+.modal-section button.modal-open-button{
+    display: none;
+}
+
+
+/*Styles for the links that represent the reject and confirm buttons */
+table tr.text-center a{
+    display: block;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-size: larger;
+    padding: 10px;
+    color: white;
+}
+
+/*Styles for the confirm button found in the reservations when viewed on small screen*/
+table tr.text-center a.sm-confirm{
+    background-color: #5bc0de;
+}
+
+/*Styles for the reject button found in the reservations when viewed on small screen*/
+table tr.text-center a.sm-reject{
+    background-color: #d9534f;
+}
+
+.serve-your-needs-text{
+    text-align: center;
+    padding: 50px;
+    font-size: 2em;
+}
+/*These styles are for the zoomIn infects of the services section
+  Basically theres the alteration of the animation speed and delay time*/
+.zoomIn{
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.convinient-affordable-reliable{
+    background-color: deepskyblue;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.convinient-affordable-reliable .col-md-12{
+    border: 1px solid white;
+    height: 250px;
+    -webkit-border-radius: 3px 3px 3px 3px  ;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
